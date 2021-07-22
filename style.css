@@ -1,0 +1,133 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: antiquewhite;
+  font-family: "Poppins", sans-serif;
+}
+
+.four-cards {
+  margin: 5rem;
+  -webkit-box-shadow: 0px 0px 10px 5px rgba(128, 128, 128, 0.18);
+          box-shadow: 0px 0px 10px 5px rgba(128, 128, 128, 0.18);
+  background-color: white;
+  border-radius: 5px;
+  padding: 5rem;
+}
+
+.text {
+  text-align: center;
+  margin: auto;
+  width: 50%;
+}
+
+.text p,
+.text h1:nth-child(1) {
+  font-weight: 100;
+}
+
+.text h1 {
+  color: #4c4e61;
+  font-size: 2rem;
+}
+
+.text p {
+  margin-top: 1rem;
+  font-weight: lighter;
+  color: #a3a5ae;
+}
+
+.cards {
+  margin-top: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.one-card-section,
+.two-card-section {
+  width: 30%;
+}
+
+.two-card-section section:first-child {
+  margin-bottom: 1rem;
+}
+
+.red-border {
+  border-top: 5px solid #ea5353;
+}
+
+.cyan-border {
+  border-top: 5px solid #45d3d3;
+}
+
+.orange-border {
+  border-top: 5px solid #fcaf4a;
+}
+
+.blue-border {
+  border-top: 5px solid #549ef2;
+}
+
+.card {
+  padding: 1rem;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 5px 5px rgba(128, 128, 128, 0.15);
+          box-shadow: 0px 0px 5px 5px rgba(128, 128, 128, 0.15);
+}
+
+.card h4 {
+  margin-bottom: 1rem;
+  color: #4c4e61;
+}
+
+.card p {
+  font-weight: 100;
+  color: #a3a5ae;
+  margin-bottom: 1rem;
+}
+
+.icon {
+  text-align: right;
+}
+
+@media screen and (max-width: 1000px) {
+  .four-cards {
+    margin: 1rem;
+    padding: 1rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .four-cards {
+    margin: 1rem;
+    padding: 1rem;
+  }
+  .text {
+    width: 100%;
+  }
+  .cards {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .one-card-section,
+  .two-card-section {
+    width: 100%;
+  }
+  .card {
+    margin-bottom: 1rem;
+  }
+}
